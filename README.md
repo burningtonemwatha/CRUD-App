@@ -76,4 +76,3 @@ A basic **Create, Read, Update, Delete (CRUD)** web application built with **PHP
 ## 📄 License
 
 This project is licensed under the MIT License — feel free to use and modify it as needed.
-```
