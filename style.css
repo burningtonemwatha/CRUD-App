@@ -1,0 +1,103 @@
+/* Full-page blurred background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('background.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  
+  /* Normal page styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Container styling */
+  .container {
+    width: 90%;
+    max-width: 700px;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Typography */
+  h2 {
+    color: #a6683b;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  /* Post styling */
+  .post {
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  a.btn,
+  .edit-btn,
+  .delete-btn,
+  .page-link,
+  button {
+    display: inline-block;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  a.btn {
+    background-color: #a6683b;
+    margin-bottom: 20px;
+  }
+  
+  .edit-btn {
+    background-color: #a6683b;
+    margin-right: 5px;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  .page-link {
+    background-color: #6c757d;
+    margin: 2px;
+  }
+
+  .save-btn {
+    background-color: #a6683b;
+  }
+  
+  
+  a:hover,
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Form fields */
+  input[type="text"],
+  textarea {
+    width: 97%;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+  }
+  
